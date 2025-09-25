@@ -15,14 +15,14 @@
 }
 .gold-border {
   @include desktop{
-      padding: 10px 15px;
+      padding:5px 10px;
   }
-    padding: 10px 15px;
+    padding: 5px 10px;
   display: inline-block;
   font-style: italic;
   color: #f5d173;
   border: 3px solid transparent;
-  border-radius: 12px;
+  border-radius: 18px;
   transform: skewX(-12deg);
   background: linear-gradient(#0a1f44, #0a1f44) padding-box,
     linear-gradient(
