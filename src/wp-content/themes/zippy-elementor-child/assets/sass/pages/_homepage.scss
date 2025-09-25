@@ -1,0 +1,21 @@
+.custom-border {
+  @include tablet {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -10%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 18px solid #f3cd6d;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
