@@ -54,10 +54,9 @@ class Zippy_Core
 
   function disable_plugin_deactivation($actions, $plugin_file, $plugin_data, $context)
   {
-    if ($plugin_file == 'zippy-core/zippy-core.php') {
+    if ($plugin_file == 'zippy-core/zippy-sg-core.php') {
       unset($actions['deactivate']);
     }
-
     return $actions;
   }
 

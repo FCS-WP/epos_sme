@@ -1,0 +1,35 @@
+.elementor-nav-menu--toggle {
+  .elementor-menu-toggle.elementor-active {
+    + .elementor-nav-menu__container {
+      height: 100vh;
+      padding-top: 20px;
+      background-color: var(--e-global-color-primary) !important;
+    }
+  }
+  .elementor-nav-menu {
+    li {
+      a {
+        .sub-arrow {
+          svg {
+            fill: var(--e-global-color-secondary);
+            @include desktop {
+              fill: white;
+            }
+          }
+        }
+        &.highlighted {
+          color: var(--e-global-color-accent) !important;
+        }
+        &.has-submenu {
+          .sub-menu {
+            li {
+              a {
+                color: var(--e-global-color-secondary) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

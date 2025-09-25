@@ -1,0 +1,37 @@
+.text-gradient {
+  color: #b9762c;
+  background-image: linear-gradient(
+    45deg,
+    #b9762c 20%,
+    #f3cd6d 40%,
+    #b9762c 60%,
+    #f3cd6d 80%,
+    #b9762c 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.gold-border {
+  @include desktop{
+      padding:5px 10px;
+  }
+    padding: 5px 10px;
+  display: inline-block;
+  font-style: italic;
+  color: #f5d173;
+  border: 3px solid transparent;
+  border-radius: 18px;
+  transform: skewX(-12deg);
+  background: linear-gradient(#0a1f44, #0a1f44) padding-box,
+    linear-gradient(
+        90deg,
+        #b9762c 0%,
+        #f3cd6d 25%,
+        #b9762c 50%,
+        #f3cd6d 75%,
+        #b9762c 100%
+      )
+      border-box;
+}
